@@ -27,20 +27,22 @@ In the navigation pane, choose Databases.
 Choose Create database.
 
 Choose Standard Create.
-
-***Important
+```
+### Important
 Do not choose Easy Create. If you choose it, you can't configure the necessary settings to launch this RDS DB.
+```
 
-Under Additional configuration, for Initial database name, type **ebdb.
+Under Additional configuration, for Initial database name, type ebdb.
 
 Review the default settings and adjust these settings according to your specific requirements. Pay attention to the following options:
 
-DB instance class – Choose an instance size that has an appropriate amount of memory and CPU power for your workload.
+**DB instance class** – Choose an instance size that has an appropriate amount of memory and CPU power for your workload.
 
-Multi-AZ deployment – For high availability, set this to Create an Aurora Replica/Reader node in a different AZ.
+**Multi-AZ deployment** – For high availability, set this to Create an Aurora Replica/Reader node in a different AZ.
 
-Master username and Master password – The database username and password. Make a note of these settings because you will use them later.
+**Master username ** and **Master password **– The database username and password. Make a note of these settings because you will use them later.
 
-Verify the default settings for the remaining options, and then choose Create database.
+Verify the default settings for the remaining options, and then choose **Create database.
+**
 
 After your DB instance is created, modify the security group attached to it in order to allow inbound traffic on the appropriate port..
